@@ -1,126 +1,693 @@
-## Hi there 👋
-// Celo-HT Website — GitHub-ready scaffold // This single-file scaffold contains the repo files separated by markers. // To create the repo: copy each file block into the corresponding file path.
+1️⃣ README.md
 
-// -------- FILE: package.json -------- { "name": "celo-ht-website", "version": "0.1.0", "private": true, "scripts": { "dev": "vite", "build": "vite build", "preview": "vite preview", "lint": "eslint . --ext .ts,.tsx,.js,.jsx" }, "dependencies": { "react": "^18.2.0", "react-dom": "^18.2.0", "react-router-dom": "^6.14.1" }, "devDependencies": { "@types/react": "^18.2.20", "@types/react-dom": "^18.2.7", "typescript": "^5.4.2", "vite": "^5.0.0", "tailwindcss": "^4.0.0", "postcss": "^8.4.0", "autoprefixer": "^10.4.0" } }
+# CeloHT
 
-// -------- FILE: public/index.html -------- <!doctype html>
+CeloHT se yon inisyativ open-source ki vize ranfòse enklizyon finansye ann Ayiti atravè itilizasyon teknoloji blockchain Celo. Pwojè a mete aksan sou aksè mobil, edikasyon, transparans, ak sekirite.
 
-<html lang="ht">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Celo HT — Fòmasyon & Solisyon Peman sou Celo pou Kominote Ayisyen" />
-    <title>Celo HT</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>// -------- FILE: tailwind.config.cjs -------- module.exports = { content: ['./index.html', './src/**/*.{ts,tsx}'], theme: { extend: { colors: { gold: '#D4AF37' } } }, plugins: [] }
+## 🚀 Objektif
+- Fasilite aksè a solisyon finansye pou popilasyon ki pa banke yo.
+- Bati zouti verifyab, sekirize, epi aksesib pou itilizatè ayisyen.
+- Ankouraje yon ekosistèm kontribisyon ak inovasyon open-source.
 
-// -------- FILE: src/main.tsx -------- import React from 'react' import { createRoot } from 'react-dom/client' import { BrowserRouter } from 'react-router-dom' import App from './App' import './styles/globals.css'
+## 📚 Dokiman Enpòtan
+- **Gouvènans:** [GOVERNANCE.md](./GOVERNANCE.md)
+- **Sekirite & Rapò:** [SECURITY.md](./SECURITY.md) | /audits/
+- **Transparans Finansye:** [FINANCE_TRANSPARENCY.md](./FINANCE_TRANSPARENCY.md)
+- **Gid kontribisyon:** [CONTRIBUTING.md](./CONTRIBUTING.md)
 
-createRoot(document.getElementById('root')!).render( <React.StrictMode> <BrowserRouter> <App /> </BrowserRouter> </React.StrictMode> )
+## 🛠 Enstalasyon Devlopman
+```bash
+git clone https://github.com/USERNAME/CeloHT.git
+cd CeloHT
+```
 
-// -------- FILE: src/App.tsx -------- import React from 'react' import { Routes, Route } from 'react-router-dom' import Header from './components/Header' import Footer from './components/Footer' import Home from './pages/Home' import About from './pages/About' import Services from './pages/Services' import Blog from './pages/Blog' import Contact from './pages/Contact'
+## 📄 Lisans
+MIT oswa Apache-2.0.
 
-export default function App(){ return ( <div className="min-h-screen bg-black text-white"> <Header /> <main className="max-w-6xl mx-auto px-6 py-10"> <Routes> <Route path="/" element={<Home />} /> <Route path="/about" element={<About />} /> <Route path="/services" element={<Services />} /> <Route path="/blog" element={<Blog />} /> <Route path="/contact" element={<Contact />} /> </Routes> </main> <Footer /> </div> ) }
 
-// -------- FILE: src/components/Header.tsx -------- import React from 'react' import { Link } from 'react-router-dom'
 
-export default function Header(){ return ( <header className="border-b border-gray-800"> <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"> <div className="flex items-center gap-4"> <img src="/src/assets/logo-gold-on-black.svg" alt="Celo HT" className="w-12 h-12" /> <div> <div className="text-xl font-semibold">Celo HT</div> <div className="text-xs text-gray-300">Finans dijital pou kominote Ayisyen</div> </div> </div> <nav className="hidden md:flex gap-6 text-gray-200"> <Link to="/">Home</Link> <Link to="/about">About</Link> <Link to="/services">Services</Link> <Link to="/blog">Blog</Link> <Link to="/contact">Contact</Link> </nav> </div> </header> ) }
+2️⃣ GOVERNANCE.md
 
-// -------- FILE: src/components/Footer.tsx -------- import React from 'react'
+# Gouvènans CeloHT
+Dokiman sa a defini estrikti gouvènans pwojè a, wòl yo, ak pwosesis pou pran desizyon.
 
-export default function Footer(){ return ( <footer className="border-t border-gray-800 mt-12"> <div className="max-w-6xl mx-auto px-6 py-6 text-sm text-gray-400 flex justify-between"> <div>© {new Date().getFullYear()} Celo HT — Tout dwa rezève</div> <div>Made with ♥ for the Haitian community</div> </div> </footer> ) }
+## 🧩 Estrikti
+- **Core Team:** Sipèvize vizyon pwojè a
+- **Stewards:** Suivi operasyon, sekirite, ak siksè teknik
+- **Contributors:** Nenpòt moun ki kontribye volontèman
+- **Community Council:** Gwoup ki valide gwo desizyon yo
 
-// -------- FILE: src/components/ServiceCard.tsx -------- import React from 'react'
+## 🔄 Pwosesis Pran Desizyon
+1. **Pwopozisyon** – Ouvri kòm *issue* oswa *PR*
+2. **Diskisyon piblik** – 72–120 èdtan
+3. **Vot kominotè** – Transparent & piblik
+4. **Ekzekisyon** – Revizyon + Merge + Deploy
 
-export default function ServiceCard({title, desc}:{title:string, desc:string}){ return ( <div className="rounded-xl p-6 bg-gray-900 border border-gray-800"> <h5 className="font-semibold">{title}</h5> <p className="mt-2 text-gray-300 text-sm">{desc}</p> </div> ) }
+## ⚠️ Politik Konfli Enterè
+Nenpòt moun ki gen avantaj dirèk/enkonsyan dwe deklare l piblikman.
 
-// -------- FILE: src/pages/Home.tsx -------- import React from 'react' import { Link } from 'react-router-dom'
+## 🚨 Pwotokòl Ijans
+- Patch sekirite kritik yo ka aplike imedyatman
+- Revizyon piblik obligatwa nan 72 èdtan
 
-export default function Home(){ return ( <section> <h1 className="text-4xl font-bold">Celo HT — Finans dijital pou tout moun</h1> <p className="mt-4 text-gray-300">Nou edike ak sipòte kominote ayisyen pou itilize kriptomonè ak zouti finansye sou rezo Celo. Antre nan yon mouvman ki fè peman pi aksesib, pi vit, ak plis transparan.</p>
 
-<div className="mt-8 grid md:grid-cols-3 gap-6">
-    <div className="col-span-2">
-      <h2 className="text-2xl font-semibold">Sa nou ofri</h2>
-      <p className="mt-2 text-gray-300">Fòmasyon pratik, devlopman teknik, ak konsiltasyon stratejik pou biznis, ONG, ak moun.</p>
-    </div>
-    <aside>
-      <Link to="/contact" className="inline-block px-5 py-3 rounded-xl bg-gold text-black font-semibold">Kontakte nou</Link>
-    </aside>
-  </div>
-</section>
 
-) }
+3️⃣ SECURITY.md
 
-// -------- FILE: src/pages/About.tsx -------- import React from 'react'
+# Sekirite — CeloHT
+Nou angaje pou kenbe pwojè a sekirize. Men ki jan pou rapòte pwoblèm sekirite.
 
-export default function About(){ return ( <section> <h1 className="text-3xl font-bold">Sou Celo HT</h1> <p className="mt-4 text-gray-300">Celo HT se yon inisyativ pou pote solisyon finansye sou blockchain bay kominote Ayisyen. Nou kwè teknoloji dwe itil pou moun, pa sèlman pou moun ki deja gen aksè — se pou sa nou konsantre sou edikasyon, entegrasyon lokal, ak acha fasil atravè telefòn.</p>
+## 📬 Kontakte Sekirite
+- **Email sekirite:** security@celoht.org
+- **PGP Key:** (Antre kle ou la)
 
-<h2 className="mt-6 text-xl font-semibold">Vision & Valè</h2>
-  <p className="mt-2 text-gray-300">Yon peyi kote tout moun gen opsyon pou fè peman dijital fasil, san depans twòp, epi ak respè pou sekirite. Nou kenbe etik kominote, transparans, ak enklizyon.</p>
+## 🛡 Politik Divulgasyon
+- Periyòd divilgasyon responsab: **90 jou**
+- Nou swete kontribitè yo rapòte vilnerabilite an prive
 
-  <h2 className="mt-6 text-xl font-semibold">Ekip</h2>
-  <p className="mt-2 text-gray-300">Ekip la gen ekspètiz nan devlopman Web3, fòmasyon, ak kolaborasyon lokal. Nou travay ak patnè teknik ak ONG pou solisyon pratik.</p>
-</section>
+## 🧪 Pwosesis Rezolisyon
+1. Resevwa rapò
+2. Fè verifikasyon
+3. Fòme patch
+4. Pibliye CVE-style advisory
 
-) }
 
-// -------- FILE: src/pages/Services.tsx -------- import React from 'react' import ServiceCard from '../components/ServiceCard'
 
-export default function Services(){ return ( <section> <h1 className="text-3xl font-bold">Sèvis nou yo</h1> <div className="mt-6 grid md:grid-cols-3 gap-6"> <ServiceCard title="Fòmasyon & Atelye" desc="Sesyon pratik sou kòman pou itilize pòch Celo, sekirite, ak komès debaz." /> <ServiceCard title="Konsiltasyon" desc="Analiz bezwen, plan entegrasyon peman, ak evalyasyon risk." /> <ServiceCard title="Devlopman" desc="Kreyasyon DApp, APIs, entegrasyon POS, ak solisyon mobil." /> </div> </section> ) }
+4️⃣ AUDIT_REPORT_TEMPLATE.md
 
-// -------- FILE: src/pages/Blog.tsx -------- import React from 'react'
+# CeloHT — Modèl Rapò Audit
 
-export default function Blog(){ return ( <section> <h1 className="text-3xl font-bold">Blog & Resous</h1> <p className="mt-4 text-gray-300">Telechaje gid an Kreyòl sou kòman pou itilize pòch, kou sou lekti tablo kripto, ak FAQ sou entegrasyon peman.</p> <ul className="mt-4 list-disc list-inside text-gray-300"> <li>Kòman pou itilize pòch Celo: Gid pratik pou debutan</li> <li>5 risk pou w konnen anvan w antre nan kripto</li> <li>Entegrasyon peman Celo pou ti biznis nan Ayiti</li> </ul> </section> ) }
+## 1. Rezime Egzekitif
+(Rezime 3–5 fraz sou konklizyon odit la.)
 
-// -------- FILE: src/pages/Contact.tsx -------- import React from 'react'
+## 2. Metodoloji
+- Zouti
+- Vèsyon kòd
+- Testnet/Mainnet
+- Adrès kontra yo
 
-export default function Contact(){ return ( <section> <h1 className="text-3xl font-bold">Kontakte nou</h1> <p className="mt-4 text-gray-300">Pou mande sèvis, kolaborasyon, oswa sipò teknik, voye yon mesaj ba nou.</p> <p className="mt-2 text-gray-300">Imèl: <a href="mailto:celoht3@gmail.com" className="text-gold">celoht3@gmail.com</a></p> </section> ) }
+## 3. Rezilta
+### 🔴 Risk Kritik
+- Deskripsyon
+- Prèv
+- Solisyon
 
-// -------- FILE: src/styles/globals.css -------- @tailwind base; @tailwind components; @tailwind utilities;
+### 🟡 Risk Mwayen
+### 🟢 Risk Fèb
 
-html, body, #root { height: 100%; } body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto; }
+## 4. Rekòmandasyon
+(Lis rekòmandasyon teknik ak operasyonèl.)
 
-// -------- FILE: src/assets/logo-gold-on-black.svg -------- <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"> <rect width="100%" height="100%" fill="#000"/> <circle cx="60" cy="60" r="40" fill="#D4AF37" /> <text x="100" y="120" fill="#D4AF37" font-size="36" font-family="Inter, sans-serif" text-anchor="middle">Celo</text> </svg>
+## 5. Prèv
+- Tx hashes
+- Diffs
+- Logs
 
-// -------- FILE: README.md --------
+## 6. Siyati
+**Oditè:** …  
+**Dat:** …
 
-Celo HT Website
 
-Project scaffold for Celo HT — React + Vite + Tailwind. Copy files into a GitHub repo and deploy on Vercel or Netlify.
 
-Local dev
 
-npm install
-npm run dev
+5️⃣ TECH_CHECKLIST.md
+
+# Checklist Teknik — CeloHT
+
+## ✅ Sekirite
+- [ ] Depandans pini
+- [ ] Audit fèt & pibliye
+- [ ] Kontra verifye pou piblik la
+
+## 🧪 Tès
+- [ ] Unit tests ≥ 90% pou fonksyon kritik yo
+- [ ] Integration tests konplè
+
+## 🚀 Deploy
+- [ ] CI/CD aktif (GitHub Actions)
+- [ ] Testnet → Mainnet workflow dokimante
+
+
+
+
+6️⃣ FINANCE_TRANSPARENCY.md
+
+# Transparans Finansye — CeloHT
+
+## 💰 Model Kontab
+Nou itilize prensip **Double-entry Accounting**.
+
+## 📊 Rapò Regilye
+- **Mwa / Trimès**: Revni, depans, fon k ap fonksyone
+
+## 🏦 Adrès Treasury On-chain
+- CELO: …
+- cUSD: …
+
+## 📈 KPI
+- # Ajan aktif
+- # Itilizatè
+- Volim tranzaksyon
+
+
+
+
+7️⃣ CONTRIBUTING.md
+
+# Gid Kontribisyon — CeloHT
+
+## 👋 Ki moun ki ka kontribye?
+Tout moun!
+
+## 🛠 Ki jan pou kontribye
+1. Fòke repo a
+2. Kreye yon branch
+3. Fè chanjman ou
+4. Soumèt yon PR
+
+## 📐 Konvansyon Commit
+Nou itilize **Conventional Commits**:
+- feat:
+- fix:
+- docs:
+- refactor:
+
+
+
+8️⃣ CODE_OF_CONDUCT.md
+
+# Kod Konduit – CeloHT
+Nou suiv règleman **Contributor Covenant v2.1**.
+
+## Règleman Debaz
+- Respè mityèl
+- Pa gen diskriminasyon
+- Kominikasyon pwofesyonèl
+
+## Rapò Abi
+contact@celoht.org
+
+
+
+9️⃣ ISSUE_TEMPLATE.md
+
+# 🐞 Bug Report
+**Deskripsyon:** …  
+**Etap pou repwodui:** …  
+**Rezilta espere:** …  
+**Sistèm:** OS / vèsyon / navigateur
 
 
 ---
 
-// END OF SCAFFOLD
+🔟 PULL_REQUEST_TEMPLATE.md
 
-/* Next steps I can do for you:
+# Pull Request — CeloHT
 
-Generate a ZIP of this repo so you can download and push to GitHub.
+## 🔍 Rezime
+(Explike sa PR a fè.)
 
-Push these files directly to a GitHub repo if you give me the repo URL and permissions. */
+## 🔧 Chanjman prensipal yo
+- …
+- …
+
+## 🧪 Tès
+(list tès ou te fè)
+
+## ✔ Checklist
+- [ ] Tès kouri san erè
+- [ ] Dokiman mete ajou
+- [ ] Kòd swiv style-projè a
+
+
+more +
+
+1️⃣ .gitignore
+
+# Node
+node_modules/
+dist/
+build/
+.env
+.env.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
 
 
 
-<!--
-**Celo-HT/Celo-HT** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+2️⃣ LICENSE (Apache-2.0)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Apache License 2.0
+Copyright 2025 CeloHT Contributors
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+
+
+
+3️⃣ Estrikti Folder Rekòmande
+
+CeloHT/
+├── .github/
+│   ├── workflows/
+│   │   ├── ci.yml
+│   │   └── security.yml
+│   ├── ISSUE_TEMPLATE.md
+│   └── PULL_REQUEST_TEMPLATE.md
+├── contracts/
+├── docs/
+│   ├── audits/
+│   ├── governance/
+│   └── finance/
+├── scripts/
+├── src/
+├── tests/
+├── README.md
+├── SECURITY.md
+├── GOVERNANCE.md
+├── CONTRIBUTING.md
+├── TECH_CHECKLIST.md
+├── FINANCE_TRANSPARENCY.md
+└── LICENSE
+
+
+
+
+4️⃣ GitHub Actions: CI (ci.yml)
+
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install deps
+        run: npm install
+      - name: Run tests
+        run: npm test
+
+
+
+5️⃣ GitHub Actions: Security Scan (security.yml)
+
+name: Security Scan
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"  # chak dimanch
+  workflow_dispatch:
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install deps
+        run: npm install
+      - name: Run audit
+        run: npm audit --audit-level=moderate
+
+
+
+
+✔️ Repo ou kounye a gen workflows, lisans, gitignore & estrikti pwofesyonèl.
+
+Si ou vle, mwen ka kreye yon ZIP telechajab ki gen TOUT fichye yo.
+
+
+
+6️⃣ GitHub Actions: Deploy (deploy.yml)
+
+name: Deploy
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to Production
+        env:
+          API_KEY: ${{ secrets.DEPLOY_API_KEY }}
+        run: |
+          echo "Deploying..."
+          # Antre script deploy ou isit
+
+
+
+
+7️⃣ GitHub Actions: Test Coverage (coverage.yml)
+
+name: Test Coverage
+
+on:
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests with coverage
+        run: npm run test:coverage
+
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage/
+
+
+
+
+8️⃣ GitHub Actions: Lint + Format (lint.yml)
+
+name: Lint & Format
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: Run Prettier Check
+        run: npm run format:check
+
+
+
+
+9️⃣ GitHub Actions: Docker Build (docker.yml)
+
+name: Docker Build
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Login to DockerHub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build Docker image
+        run: |
+          docker build -t celoht/app:latest .
+
+      - name: Push image
+        run: |
+          docker push celoht/app:latest
+
+
+
+
+🔟 GitHub Actions: Smart Contract CI (contracts.yml)
+
+name: Smart Contract CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  contract-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Compile contracts
+        run: npx hardhat compile
+
+      - name: Run contract tests
+        run: npx hardhat test
+
+more+
+
+
+
+1️⃣ Semantic Versioning + Auto Release (release.yml)
+
+name: Auto Release
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Create Release
+        uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: node
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+
+
+
+2️⃣ Automatic Changelog Generator (changelog.yml)
+
+name: Changelog Generator
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Generate Changelog
+        uses: orhun/git-cliff-action@v2
+        with:
+          config: cliff.toml
+          args: -o CHANGELOG.md
+
+      - name: Commit Changelog
+        run: |
+          git config user.email "bot@github.com"
+          git config user.name "GitHub Bot"
+          git add CHANGELOG.md
+          git commit -m "chore: update changelog" || echo "No changes"
+          git push
+
+
+
+
+3️⃣ Sentry Monitoring Deploy Hooks (sentry-deploy.yml)
+
+name: Sentry Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  sentry:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Notify Sentry
+        run: |
+          curl https://sentry.io/api/0/organizations/${{ secrets.SENTRY_ORG }}/releases/ \
+            -X POST \
+            -H "Authorization: Bearer ${{ secrets.SENTRY_AUTH_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{"version": "${GITHUB_SHA}", "projects": ["celoht"]}'
+
+
+
+4️⃣ Gas Usage Reporter for Smart Contracts (gas-report.yml)
+
+name: Gas Usage Report
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  gas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Deps
+        run: npm install
+
+      - name: Run Gas Report
+        run: npx hardhat test --network hardhat
+
+      - name: Upload Gas Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: gas-report
+          path: gas-report.txt
+
+
+
+5️⃣ Dependabot – Automatic Dependency Updates
+
+Fichye sa a ale nan: .github/dependabot.yml
+
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+
+
+
+6️⃣ CodeQL Security Scan (codeql.yml)
+
+name: CodeQL Analysis
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: "0 2 * * 1"
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'javascript' ]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: ${{ matrix.language }}
+
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v3
+
+      - name: Perform Analysis
+        uses: github/codeql-action/analyze@v3
