@@ -1,6 +1,13 @@
+
+
+
+![image](https://raw.githubusercontent.com/.../logo.png)
+
+
+
 README.md
 
-CeloHT is a global, community-driven Web3 empowerment initiative building financial inclusion, blockchain education, and digital opportunity in Haiti and worldwide.
+CeloHT is a global, community-driven Web3 empowerment initiative building financial inclusion, blockchain education,committed to promoting crypto Celo and digital opportunity in Haiti and worldwide.
 
 
 
