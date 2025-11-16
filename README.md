@@ -1,7 +1,7 @@
 
 
 
-![image](https://raw.githubusercontent.com/.../logo.png)
+<img src="data:image/png;base64,LE-NOU-M-BA-W-LA" width="200">
 
 
 
