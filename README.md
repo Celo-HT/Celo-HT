@@ -1,10 +1,4 @@
 
-
-
-<img src="data:image/png;base64,LE-NOU-M-BA-W-LA" width="200">
-
-
-
 README.md
 
 CeloHT is a global, community-driven Web3 empowerment initiative building financial inclusion, blockchain education,committed to promoting crypto Celo and digital opportunity in Haiti and worldwide.
