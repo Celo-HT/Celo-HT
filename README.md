@@ -1,693 +1,393 @@
-1️⃣ README.md
+README.md
 
-# CeloHT
+CeloHT is a global, community-driven Web3 empowerment initiative building financial inclusion, blockchain education, and digital opportunity in Haiti and worldwide.
 
-CeloHT se yon inisyativ open-source ki vize ranfòse enklizyon finansye ann Ayiti atravè itilizasyon teknoloji blockchain Celo. Pwojè a mete aksan sou aksè mobil, edikasyon, transparans, ak sekirite.
 
-## 🚀 Objektif
-- Fasilite aksè a solisyon finansye pou popilasyon ki pa banke yo.
-- Bati zouti verifyab, sekirize, epi aksesib pou itilizatè ayisyen.
-- Ankouraje yon ekosistèm kontribisyon ak inovasyon open-source.
 
-## 📚 Dokiman Enpòtan
-- **Gouvènans:** [GOVERNANCE.md](./GOVERNANCE.md)
-- **Sekirite & Rapò:** [SECURITY.md](./SECURITY.md) | /audits/
-- **Transparans Finansye:** [FINANCE_TRANSPARENCY.md](./FINANCE_TRANSPARENCY.md)
-- **Gid kontribisyon:** [CONTRIBUTING.md](./CONTRIBUTING.md)
+1. Mission
 
-## 🛠 Enstalasyon Devlopman
-```bash
-git clone https://github.com/USERNAME/CeloHT.git
-cd CeloHT
-```
+Empower individuals and communities through accessible blockchain education, ethical digital finance
 
-## 📄 Lisans
-MIT oswa Apache-2.0.
+2. Mission Statement
 
+CeloHT aims to create a modern digital ecosystem accessible to every Haitian. We provide blockchain education, financial literacy, and Web3 opportunities while connecting Haiti to the global digital economy.
 
+Core values:
 
-2️⃣ GOVERNANCE.md
+Transparency
 
-# Gouvènans CeloHT
-Dokiman sa a defini estrikti gouvènans pwojè a, wòl yo, ak pwosesis pou pran desizyon.
+Financial inclusion
 
-## 🧩 Estrikti
-- **Core Team:** Sipèvize vizyon pwojè a
-- **Stewards:** Suivi operasyon, sekirite, ak siksè teknik
-- **Contributors:** Nenpòt moun ki kontribye volontèman
-- **Community Council:** Gwoup ki valide gwo desizyon yo
+Community empowerment
 
-## 🔄 Pwosesis Pran Desizyon
-1. **Pwopozisyon** – Ouvri kòm *issue* oswa *PR*
-2. **Diskisyon piblik** – 72–120 èdtan
-3. **Vot kominotè** – Transparent & piblik
-4. **Ekzekisyon** – Revizyon + Merge + Deploy
+Ethical development
 
-## ⚠️ Politik Konfli Enterè
-Nenpòt moun ki gen avantaj dirèk/enkonsyan dwe deklare l piblikman.
+Innovation
 
-## 🚨 Pwotokòl Ijans
-- Patch sekirite kritik yo ka aplike imedyatman
-- Revizyon piblik obligatwa nan 72 èdtan
+3. Vision
 
+To become the leading Web3 digital empowerment hub in Haiti and a recognized global model for blockchain-based community development.
 
+4. Objectives
 
-3️⃣ SECURITY.md
+Educate communities about digital finance and blockchain technologies.
 
-# Sekirite — CeloHT
-Nou angaje pou kenbe pwojè a sekirize. Men ki jan pou rapòte pwoblèm sekirite.
+Build a structured ecosystem of certified CeloHT Agents across all regions.
 
-## 📬 Kontakte Sekirite
-- **Email sekirite:** security@celoht.org
-- **PGP Key:** (Antre kle ou la)
+Facilitate access to digital wallets, stablecoins, and Web3 tools.
 
-## 🛡 Politik Divulgasyon
-- Periyòd divilgasyon responsab: **90 jou**
-- Nou swete kontribitè yo rapòte vilnerabilite an prive
+Promote secure and responsible crypto adoption.
 
-## 🧪 Pwosesis Rezolisyon
-1. Resevwa rapò
-2. Fè verifikasyon
-3. Fòme patch
-4. Pibliye CVE-style advisory
+Establish Haiti as a strong participant in the global digital economy.
 
+5. Core Activities
 
+Blockchain & Web3 education programs
 
-4️⃣ AUDIT_REPORT_TEMPLATE.md
+Community outreach through CeloHT Certified Agents
 
-# CeloHT — Modèl Rapò Audit
+Digital financial literacy training
 
-## 1. Rezime Egzekitif
-(Rezime 3–5 fraz sou konklizyon odit la.)
+Local business onboarding to digital payments
 
-## 2. Metodoloji
-- Zouti
-- Vèsyon kòd
-- Testnet/Mainnet
-- Adrès kontra yo
+Workshops, webinars, and online educational materials
 
-## 3. Rezilta
-### 🔴 Risk Kritik
-- Deskripsyon
-- Prèv
-- Solisyon
+Development of Web3 learning resources
 
-### 🟡 Risk Mwayen
-### 🟢 Risk Fèb
+6. CeloHT Agent Network
 
-## 4. Rekòmandasyon
-(Lis rekòmandasyon teknik ak operasyonèl.)
+CeloHT operates with a structured agent model used by major international digital finance initiatives.
 
-## 5. Prèv
-- Tx hashes
-- Diffs
-- Logs
+6.1 Categories of Agents
 
-## 6. Siyati
-**Oditè:** …  
-**Dat:** …
+1. Community Agent Educates local communities about digital finance, wallets, stablecoins, and opportunities.
 
+2. Development Agent Works with small businesses and organizations to integrate digital payments and Web3 tools.
 
+3. Global Agent Represents CeloHT on an international level, creates partnerships, and brings global opportunities.
 
+6.2 Agent Responsibilities
 
-5️⃣ TECH_CHECKLIST.md
+Promote blockchain education responsibly
 
-# Checklist Teknik — CeloHT
+Ensure transparency and ethical communication
 
-## ✅ Sekirite
-- [ ] Depandans pini
-- [ ] Audit fèt & pibliye
-- [ ] Kontra verifye pou piblik la
+Assist users in understanding digital tools
 
-## 🧪 Tès
-- [ ] Unit tests ≥ 90% pou fonksyon kritik yo
-- [ ] Integration tests konplè
+Support businesses during onboarding
 
-## 🚀 Deploy
-- [ ] CI/CD aktif (GitHub Actions)
-- [ ] Testnet → Mainnet workflow dokimante
+Report community challenges and progress
 
+6.3 Agent Benefits
 
+Official CeloHT certification
 
+Access to exclusive trainings
 
-6️⃣ FINANCE_TRANSPARENCY.md
+Recognition inside the global Web3 ecosystem
 
-# Transparans Finansye — CeloHT
+Opportunities for career development
 
-## 💰 Model Kontab
-Nou itilize prensip **Double-entry Accounting**.
+7. Governance Structure
 
-## 📊 Rapò Regilye
-- **Mwa / Trimès**: Revni, depans, fon k ap fonksyone
+CeloHT follows a governance model similar to successful decentralized community-driven organizations.
 
-## 🏦 Adrès Treasury On-chain
-- CELO: …
-- cUSD: …
+7.1 Organizational Units
 
-## 📈 KPI
-- # Ajan aktif
-- # Itilizatè
-- Volim tranzaksyon
+Executive Board – strategic decisions and global direction
 
+Community Division – coordination of agents and education programs
 
+Development Division – partnerships and business integration
 
+Compliance & Transparency Office – ensures ethical and secure operations
 
-7️⃣ CONTRIBUTING.md
+Communication Unit – public content and branding
 
-# Gid Kontribisyon — CeloHT
+7.2 Decision-Making Principles
 
-## 👋 Ki moun ki ka kontribye?
-Tout moun!
+Transparency
 
-## 🛠 Ki jan pou kontribye
-1. Fòke repo a
-2. Kreye yon branch
-3. Fè chanjman ou
-4. Soumèt yon PR
+Data-driven planning
 
-## 📐 Konvansyon Commit
-Nou itilize **Conventional Commits**:
-- feat:
-- fix:
-- docs:
-- refactor:
+Community feedback integration
 
+Legal & regulatory compliance
 
+8. Compliance and Transparency
 
-8️⃣ CODE_OF_CONDUCT.md
+CeloHT follows international compliance standards:
 
-# Kod Konduit – CeloHT
-Nou suiv règleman **Contributor Covenant v2.1**.
+No financial transactions handled directly by the organization
 
-## Règleman Debaz
-- Respè mityèl
-- Pa gen diskriminasyon
-- Kominikasyon pwofesyonèl
+No fundraising without legal certification
 
-## Rapò Abi
-contact@celoht.org
+No promise of profit or investment return
 
+Strict anti-fraud and anti-misinformation guidelines
 
+Full transparency in documentation, operations, and partnerships
 
-9️⃣ ISSUE_TEMPLATE.md
+9. Educational Framework
 
-# 🐞 Bug Report
-**Deskripsyon:** …  
-**Etap pou repwodui:** …  
-**Rezilta espere:** …  
-**Sistèm:** OS / vèsyon / navigateur
+CeloHT uses a globally recognized educational structure.
 
+9.1 Training Modules
 
----
+Introduction to Blockchain & Digital Finance
 
-🔟 PULL_REQUEST_TEMPLATE.md
+Understanding Stablecoins and Digital Wallets
 
-# Pull Request — CeloHT
+Web3 Tools and Applications
 
-## 🔍 Rezime
-(Explike sa PR a fè.)
+Fundamentals of Decentralized Finance (DeFi)
 
-## 🔧 Chanjman prensipal yo
-- …
-- …
+Security and Responsible Crypto Use
 
-## 🧪 Tès
-(list tès ou te fè)
+Using Celo Ecosystem Tools
 
-## ✔ Checklist
-- [ ] Tès kouri san erè
-- [ ] Dokiman mete ajou
-- [ ] Kòd swiv style-projè a
+Digital Payments for Small Businesses
 
+9.2 Certifications
+Community Agent Certificate
 
-more +
+Development Agent Certificate
 
-1️⃣ .gitignore
+Global Agent Certificate
 
-# Node
-node_modules/
-dist/
-build/
-.env
-.env.local
+CeloHT Professional Educator Certificate
 
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+10. Technical Ecosystem
 
-# OS Files
-.DS_Store
-Thumbs.db
+CeloHT integrates with open-source Web3 standards.
 
-# Editor
-.vscode/
-.idea/
+10.1 Supported Tools
 
+Celo Wallets
 
+Stablecoins compatible with the Celo blockchain
 
+Decentralized applications (dApps)
 
-2️⃣ LICENSE (Apache-2.0)
+Web3 educational tools
 
-Apache License 2.0
-Copyright 2025 CeloHT Contributors
+10.2 Planned Tools
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+CeloHT Learning Hub
 
-    http://www.apache.org/licenses/LICENSE-2.0
+Agent Dashboard
 
+Verification and transparency system.
 
+11. Global Partnerships (Current and Target)
 
+CeloHT collaborates with technology, education, and community-impact organizations worldwide.
 
-3️⃣ Estrikti Folder Rekòmande
+11.1 Current Collaboration Areas
 
-CeloHT/
-├── .github/
-│   ├── workflows/
-│   │   ├── ci.yml
-│   │   └── security.yml
-│   ├── ISSUE_TEMPLATE.md
-│   └── PULL_REQUEST_TEMPLATE.md
-├── contracts/
-├── docs/
-│   ├── audits/
-│   ├── governance/
-│   └── finance/
-├── scripts/
-├── src/
-├── tests/
-├── README.md
-├── SECURITY.md
-├── GOVERNANCE.md
-├── CONTRIBUTING.md
-├── TECH_CHECKLIST.md
-├── FINANCE_TRANSPARENCY.md
-└── LICENSE
+Web3 education
 
+Blockchain training
 
+Digital empowerment
 
+11.2 Target Partnerships
 
-4️⃣ GitHub Actions: CI (ci.yml)
+Global crypto foundations
 
-name: CI
+Open-source tech companies
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+Educational institutions
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - name: Install deps
-        run: npm install
-      - name: Run tests
-        run: npm test
+NGOs focused on development
 
+12. Branding Guidelines
 
+Official Colors: Gold on Black
+Tone: Professional, inclusive, modern
+Logo Usage:
 
-5️⃣ GitHub Actions: Security Scan (security.yml)
+Do not modify the design
 
-name: Security Scan
+Maintain high contrast
 
-on:
-  schedule:
-    - cron: "0 0 * * 0"  # chak dimanch
-  workflow_dispatch:
+Ensure proper spacing and visibility
 
-jobs:
-  security:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Install deps
-        run: npm install
-      - name: Run audit
-        run: npm audit --audit-level=moderate
+All CeloHT content must follow the official brand identity.
 
+13. Roadmap (2025–2027)
+Phase 1 — Foundation (2025)
 
+Publish official documentation
 
+Build agent training curriculum
 
-✔️ Repo ou kounye a gen workflows, lisans, gitignore & estrikti pwofesyonèl.
+Expand Community Agent network
 
-Si ou vle, mwen ka kreye yon ZIP telechajab ki gen TOUT fichye yo.
+Deploy learning materials across Haiti
 
+Phase 2 — Expansion (2026)
 
+Launch global partnership program
 
-6️⃣ GitHub Actions: Deploy (deploy.yml)
+Release CeloHT Learning Hub
 
-name: Deploy
+Increase agent presence internationally
 
-on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
+Phase 3 — Innovation (2027)
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+Deploy advanced Web3 educational tools
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
+Establish global CeloHT education centers.
 
-      - name: Install dependencies
-        run: npm install
+14. Legal Status
 
-      - name: Build project
-        run: npm run build
+CeloHT is currently In Process of Official Registration in Haiti, following all administrative requirements.
 
-      - name: Deploy to Production
-        env:
-          API_KEY: ${{ secrets.DEPLOY_API_KEY }}
-        run: |
-          echo "Deploying..."
-          # Antre script deploy ou isit
+International compliance is respected according to global open-source and educational project guidelines.
 
+15. Code of Conduct
 
+All members must:
 
+Promote accurate information
 
-7️⃣ GitHub Actions: Test Coverage (coverage.yml)
+Avoid financial misinformation
 
-name: Test Coverage
+Respect privacy and community guidelines
 
-on:
-  pull_request:
-    branches: [ main ]
-  workflow_dispatch:
+Act with integrity and professionalism
 
-jobs:
-  coverage:
-    runs-on: ubuntu-latest
+Support inclusive and safe environments
 
-    steps:
-      - uses: actions/checkout@v3
+16. Security Guidelines
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
+Never ask users for private keys
 
-      - name: Install dependencies
-        run: npm install
+Always promote secure wallet practices
 
-      - name: Run tests with coverage
-        run: npm run test:coverage
+Encourage 2-factor authentication
 
-      - name: Upload coverage report
-        uses: actions/upload-artifact@v3
-        with:
-          name: coverage-report
-          path: coverage/
+Educate on common scams and fraud prevention.
 
+17. Contact Information
 
+Email: celoht3@gmail.com
+Website: Coming soon
 
+18. License
 
-8️⃣ GitHub Actions: Lint + Format (lint.yml)
+MIT License — CeloHT’s educational materials and documentation are open-source and free for community use.
 
-name: Lint & Format
+SECURITY.md
+Security Policy
 
-on:
-  pull_request:
-    branches: [ main ]
+CeloHT is committed to maintaining a secure and transparent ecosystem. We encourage responsible disclosure of any vulnerabilities.
 
-jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+Reporting a Vulnerability
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
+If you discover a security issue:
 
-      - name: Install dependencies
-        run: npm install
+Email us at celoht3@gmail.com
 
-      - name: Run ESLint
-        run: npm run lint
+Include a detailed description and proof of concept
 
-      - name: Run Prettier Check
-        run: npm run format:check
+We will respond within 72 hours
 
+Security Best Practices
 
+Do not share private keys
 
+Use hardware wallets when possible
 
-9️⃣ GitHub Actions: Docker Build (docker.yml)
+Enable 2FA on all platforms
 
-name: Docker Build
+Verify URLs and avoid phishing links.
 
-on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
+CODE_OF_CONDUCT.md
+Contributor Covenant Code of Conduct
+Our Standards
 
-jobs:
-  docker:
-    runs-on: ubuntu-latest
+Members, contributors, and agents must:
 
-    steps:
-      - uses: actions/checkout@v3
+Act respectfully and professionally
 
-      - name: Login to DockerHub
-        uses: docker/login-action@v3
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+Avoid harassment or discrimination
 
-      - name: Build Docker image
-        run: |
-          docker build -t celoht/app:latest .
+Promote clear, honest communication
 
-      - name: Push image
-        run: |
-          docker push celoht/app:latest
+Help create a safe and welcoming environment
 
+Unacceptable Behavior
 
+Threats or harassment
 
+Fraud or misinformation
 
-🔟 GitHub Actions: Smart Contract CI (contracts.yml)
+Sharing private keys or confidential data
 
-name: Smart Contract CI
+Impersonation or deceptive behavior
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+Enforcement
 
-jobs:
-  contract-tests:
-    runs-on: ubuntu-latest
+Violations may result in:
 
-    steps:
-      - uses: actions/checkout@v3
+Warnings
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
+Suspension from community programs
 
-      - name: Install dependencies
-        run: npm install
+Permanent removal from CeloHT roles.
 
-      - name: Compile contracts
-        run: npx hardhat compile
+CONTRIBUTING.md
+How to Contribute
 
-      - name: Run contract tests
-        run: npx hardhat test
+We welcome contributions from developers, educators, and community members.
 
-more+
+Contribution Areas
 
+Improving documentation
 
+Creating educational materials
 
-1️⃣ Semantic Versioning + Auto Release (release.yml)
+Developing tools for the CeloHT ecosystem
 
-name: Auto Release
+Community engagement
 
-on:
-  push:
-    branches: [ main ]
+Steps to Contribute
 
-jobs:
-  release:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+Fork the repository
 
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
+Create a new branch (feature-name)
 
-      - name: Install dependencies
-        run: npm install
+Make your changes
 
-      - name: Create Release
-        uses: google-github-actions/release-please-action@v3
-        with:
-          release-type: node
-          token: ${{ secrets.GITHUB_TOKEN }}
+Submit a pull request
 
+Wait for review from the CeloHT Team
 
+Quality Requirements
 
+Clear English
 
-2️⃣ Automatic Changelog Generator (changelog.yml)
+Professional structure
 
-name: Changelog Generator
+Accurate information
 
-on:
-  workflow_dispatch:
-  push:
-    branches: [ main ]
+No financial promises or misleading claims.
 
-jobs:
-  changelog:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+FUNDING.yml
 
-      - name: Generate Changelog
-        uses: orhun/git-cliff-action@v2
-        with:
-          config: cliff.toml
-          args: -o CHANGELOG.md
+CeloHT currently does not accept donations.
+No fundraising activities will be conducted until fully registered and compliant with legal standards.
 
-      - name: Commit Changelog
-        run: |
-          git config user.email "bot@github.com"
-          git config user.name "GitHub Bot"
-          git add CHANGELOG.md
-          git commit -m "chore: update changelog" || echo "No changes"
-          git push
+SUPPORT.md
+Need Help?
 
+If you need assistance with the project:
 
+Email: celoht3@gmail.com
 
+GitHub Issues: Submit questions or suggestions
 
-3️⃣ Sentry Monitoring Deploy Hooks (sentry-deploy.yml)
+Community Agents: Provide local education and guidance.
 
-name: Sentry Deploy
-
-on:
-  push:
-    branches: [ main ]
-
-jobs:
-  sentry:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Notify Sentry
-        run: |
-          curl https://sentry.io/api/0/organizations/${{ secrets.SENTRY_ORG }}/releases/ \
-            -X POST \
-            -H "Authorization: Bearer ${{ secrets.SENTRY_AUTH_TOKEN }}" \
-            -H "Content-Type: application/json" \
-            -d '{"version": "${GITHUB_SHA}", "projects": ["celoht"]}'
-
-
-
-4️⃣ Gas Usage Reporter for Smart Contracts (gas-report.yml)
-
-name: Gas Usage Report
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-jobs:
-  gas:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Install Deps
-        run: npm install
-
-      - name: Run Gas Report
-        run: npx hardhat test --network hardhat
-
-      - name: Upload Gas Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: gas-report
-          path: gas-report.txt
-
-
-
-5️⃣ Dependabot – Automatic Dependency Updates
-
-Fichye sa a ale nan: .github/dependabot.yml
-
-version: 2
-updates:
-  - package-ecosystem: npm
-    directory: "/"
-    schedule:
-      interval: weekly
-  - package-ecosystem: github-actions
-    directory: "/"
-    schedule:
-      interval: weekly
-
-
-
-6️⃣ CodeQL Security Scan (codeql.yml)
-
-name: CodeQL Analysis
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  schedule:
-    - cron: "0 2 * * 1"
-
-jobs:
-  analyze:
-    name: Analyze
-    runs-on: ubuntu-latest
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
-
-    strategy:
-      fail-fast: false
-      matrix:
-        language: [ 'javascript' ]
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3
-        with:
-          languages: ${{ matrix.language }}
-
-      - name: Autobuild
-        uses: github/codeql-action/autobuild@v3
-
-      - name: Perform Analysis
-        uses: github/codeql-action/analyze@v3
