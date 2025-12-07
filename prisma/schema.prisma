@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+}
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+model User {
+  id        Int      @id @default(autoincrement())
+  address   String   @unique
+  name      String?
+  createdAt DateTime @default(now())
+  reports   Reforestation[]
+}
+model Reforestation {
+  id        Int      @id @default(autoincrement())
+  location  String
+  trees     Int
+  impact    Float
+  createdAt DateTime @default(now())
+  reportedBy Int?
+  reporter   User?   @relation(fields: [reportedBy], references: [id])
+}
