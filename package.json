@@ -1,0 +1,1 @@
+{"name":"celoht-monorepo","version":"1.0.0","private":true,"workspaces":["server","web"],"scripts":{"dev":"concurrently \"npm:dev:server\" \"npm:dev:web\"","dev:server":"npm --prefix server run dev","dev:web":"npm --prefix web run dev","build:web":"npm --prefix web run build","start:server":"npm --prefix server start"},"devDependencies":{"concurrently":"^8.2.0"}}
